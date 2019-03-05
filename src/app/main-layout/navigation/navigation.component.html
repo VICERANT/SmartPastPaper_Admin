@@ -12,32 +12,61 @@
 
             <a routerLink="dashboards/home" routerLinkActive="active"
                 class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon fas icon="chart-pie" class="mr-3"></mdb-icon>Home
+                <mdb-icon fas icon="chart-pie" class="mr-3"></mdb-icon><strong>Home</strong>
             </a>
-            <a routerLink="subject/manageSubject" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Add Subject
-            </a>
-            <a routerLink="subject/addSubject" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Manage Subject
-            </a>
-            <a routerLink="user/manageUser" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon fas icon="table" class="mr-3"></mdb-icon>Add Tutors
-            </a>
-            <a routerLink="user/addUser" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon fas icon="table" class="mr-3"></mdb-icon>Manage Tutors
-            </a>
-            <a routerLink="question/manageQuestion" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon far icon="map" class="mr-3"></mdb-icon>Add Questions
-            </a>
-            <a routerLink="question/addQuestion" routerLinkActive="active"
-                class="list-group-item list-group-item-action waves-effect">
-                <mdb-icon far icon="map" class="mr-3"></mdb-icon>Manage Questions
-            </a>
+
+            <button class="dropdown-btn list-group-item list-group-item-action waves-effect">
+                <mdb-icon fas icon="book" class="mr-3"></mdb-icon>Subject
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container m-0">
+
+                <a routerLink="subject/manageSubject" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon fas icon="bible" class="mr-3"></mdb-icon>Add Subject
+                </a>
+                <a routerLink="subject/addSubject" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon fas icon="atlas" class="mr-3"></mdb-icon>Manage Subject
+                </a>
+
+            </div>
+
+
+            <button class="dropdown-btn list-group-item list-group-item-action waves-effect">
+                <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Tutors
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+
+                <a routerLink="user/manageUser" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Add Tutors
+                </a>
+                <a routerLink="user/addUser" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon fas icon="user" class="mr-3"></mdb-icon>Manage Tutors
+                </a>
+
+            </div>
+
+            <button class="dropdown-btn list-group-item list-group-item-action waves-effect">
+                <mdb-icon far icon="map" class="mr-3"></mdb-icon>Questions
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+
+                <a routerLink="question/manageQuestion" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon far icon="map" class="mr-3"></mdb-icon>Add Questions
+                </a>
+                <a routerLink="question/addQuestion" routerLinkActive="active"
+                    class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon far icon="map" class="mr-2"></mdb-icon>Manage Questions
+                </a>
+
+            </div>
+
         </div>
 
     </div>
